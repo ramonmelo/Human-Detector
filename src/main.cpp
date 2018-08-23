@@ -43,8 +43,8 @@ int nbrDevices = 0;
 int usedChannels[15];
 
 #ifndef CREDENTIALS
-#define mySSID "*****"
-#define myPASSWORD "******"
+#define mySSID "Automata"
+#define myPASSWORD "data.hal.johnny"
 #endif
 
 StaticJsonBuffer<JBUFFER>  jsonBuffer;
@@ -233,4 +233,3 @@ void sendDevices() {
   wifi_promiscuous_enable(enable);
   sendEntry = millis();
 }
-
